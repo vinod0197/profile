@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinod Kumar Portfolio</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #0078d7;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-left {
+            text-align: left;
+        }
+
+        .header-left h1 {
+            margin: 0;
+        }
+
+        .header-left p {
+            margin: 5px 0 0;
+            font-size: 0.9em;
+        }
+
+        nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            background: #0056a3;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover {
+            background: #003c73;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .skills-list, .project-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li, .project-list li {
+            margin-bottom: 10px;
+        }
+
+        .skill {
+            margin-bottom: 15px;
+        }
+
+        .skill p {
+            margin: 0 0 5px;
+            font-weight: bold;
+        }
+
+        .skill-bar {
+            width: 100%;
+            height: 10px;
+            background: #e0e0e0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .skill-level {
+            height: 10px;
+            background: #0078d7;
+            border-radius: 5px;
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            background: #0078d7;
+            color: #fff;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-left a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .footer-left a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .footer-right a {
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .footer-right a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            /* Header Navigation: Stack links vertically */
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            /* Footer: Stack footer sections vertically */
+            footer {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            /* Footer Left: Stack the shortcuts vertically */
+            .footer-left {
+                margin-bottom: 20px;
+            }
+
+            /* Footer Right: Keep contact details as block elements */
+            .footer-right a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            /* Adjust Padding and Font Sizes for smaller screens */
+            body {
+                padding-top: 10px;
+            }
+
+            h1, h2, h3 {
+                font-size: 1.2em;
+            }
+
+            .header-left p {
+                font-size: 0.85em;
+            }
+
+            .project-card h3 {
+                font-size: 1.1em;
+            }
+
+            .project-card p {
+                font-size: 0.85em;
+            }
+
+            /* Projects Grid: Stack projects in a single column */
+            .projects-grid {
+                grid-template-columns: 1fr; /* 1 column for very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <h1>Vinod Kumar</h1>
+        <p>Data Scientist | Software Developer</p>
+    </div>
+    <nav>
+        <a href="#about">Professional Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="about" class="section">
+        <h2>Professional Summary</h2>
+        <p>Results-driven Data Scientist with 3 years of experience in data analysis, machine learning, and AI model development. Proficient in Python, SQL, Power BI, RStudio, and Excel, with a strong background in building scalable AI-driven solutions and creating insightful data visualizations. Skilled in Natural Language Processing (NLP), Generative AI, and automation to optimize business processes and deliver actionable insights. Adept at presenting complex data to non-technical stakeholders, ensuring informed decision-making. Passionate about leveraging the latest advancements in data science to solve real-world challenges.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p>Python</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>SQL</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Power BI</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Excel</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>RStudio</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Natural Language Processing (NLP)</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <p>Generative AI</p>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul class="project-list">
+            <li><strong>Discount Management Optimization:</strong> Built machine learning models to optimize discount strategies, increasing profit margins by 15%.</li>
+            <li><strong>Generative AI Chatbot:</strong> Developed a chatbot using large language models to enhance customer interactions.</li>
+            <li><strong>Real-time Sales Trend Prediction:</strong> Built forecasting models to aid inventory management, reducing stock-outs by 20%.</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <ul class="project-list">
+            <li><strong>Data Scientist - Company A:</strong> Worked on machine learning models and data visualization for business optimization.</li>
+            <li><strong>Software Developer - Company B:</strong> Developed scalable software solutions for data-driven insights and automation.</li>
+            <li><strong>Research Analyst - Company C:</strong> Focused on data analysis and statistical modeling for academic projects.</li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <div class="footer-left">
+        <a href="#about">Professional Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+    </div>
+    <div class="footer-right">
+        <p>Email: <a href="mailto:vinodzeroone@gmail.com">vinodzeroone@gmail.com</a></p>
+        <p>Phone: <a href="tel:+917411773622">+91 7411773622</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/vinod-kumar-bba69b183/">Vinod Kumar</a></p>
+    </div>
+</footer>
+
+</body>
+</html>
